@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LliureX CDLocker
+Name[es]=Lliurex CDLocker
+Name[qcv]=Lliurex CDLocker
+Name[ca_ES@valencia]=Lliurex CDLocker
+Name[ca_ES.UTF-8@valencia]=Lliurex CDLocker
+TryExec=/usr/bin/lliurex-cdlocker
+Comment=Application for locking clients CD trays
+Comment[qcv]=Aplicacion para bloquear las bandejas de CD de los clientes de aula
+Comment[ca_ES@valencia]=Aplicacion para bloquear las bandejas de CD de los clientes de aula
+Comment[ca_ES.UTF-8@valencia]=Aplicacion para bloquear las bandejas de CD de los clientes de aula
+Comment[ca_ES]=Aplicacion para bloquear las bandejas de CD de los clientes de aula
+Comment[es]=Aplicacion para bloquear las bandejas de CD de los clientes de aula
+StartupNotify=true
+Exec=/usr/bin/lliurex-cdlocker
+Icon=lliurex-cdlocker
+Terminal=false
+Type=Application
+X-GNOME-Settings-Panel=lliurex-cdlocker
+X-Unity-Settings-Panel=lliurex-cdlocker
+Categories=PackageManager;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;LliureX-Administration;
