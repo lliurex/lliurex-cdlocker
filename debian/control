@@ -2,8 +2,8 @@ Source: lliurex-cdlocker
 Section: utils
 Priority: optional
 Maintainer: M.Angel Juan <m.angel.juan@gmail.com>
-Build-Depends: debhelper (>=9), llxcfg-dev, zero-dev, llxsrchelper
-Standards-Version: 3.9.7
+Build-Depends: debhelper (>=10),zero-dev,llxsrchelper
+Standards-Version: 4.1.2
 Homepage: http://lliurex.net
 
 Package: lliurex-cdlocker
