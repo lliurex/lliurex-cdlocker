@@ -1,0 +1,14 @@
+Source: lliurex-cdlocker
+Section: utils
+Priority: optional
+Maintainer: M.Angel Juan <m.angel.juan@gmail.com>
+Build-Depends: debhelper (>=9), llxcfg-dev, zero-dev, llxsrchelper
+Standards-Version: 3.9.7
+Homepage: http://lliurex.net
+
+Package: lliurex-cdlocker
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3
+Description: CD locker GUI
+ Locks drive tray for classroom computers. n4d-cdlocker-server needs to be 
+ installed  on servers and n4d-cdlocker-client on clients.
