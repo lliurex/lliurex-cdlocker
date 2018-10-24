@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.13) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 24 Oct 2018 12:48:14 +0200
+
 lliurex-cdlocker (0.3) xenial; urgency=high
 
   * Updating artwork
