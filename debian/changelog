@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.14) bionic; urgency=medium
+
+  * Applied new style to the graphical interface
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 30 Nov 2018 13:49:16 +0100
+
 lliurex-cdlocker (0.13) bionic; urgency=medium
 
   * Initial release for bionic
