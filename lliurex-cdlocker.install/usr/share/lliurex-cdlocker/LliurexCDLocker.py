@@ -3,7 +3,7 @@
 
 import gi
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk,GObject, GLib
+from gi.repository import Gtk,GObject,GLib,Gdk,Gio
 
 import signal
 import gettext
@@ -15,9 +15,10 @@ import os
 import N4dManager
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-gettext.textdomain('lliurex-shutdowner')
+gettext.textdomain('lliurex-cdlocker')
 _ = gettext.gettext
 
+CSS_FILE="/usr/share/lliurex-cdlocker/rsrc/style.css"
 
 class LliurexCDLocker:
 	
@@ -69,12 +70,16 @@ class LliurexCDLocker:
 		self.server_ip_entry=builder.get_object("server_ip_entry")
 		self.login_msg_label=builder.get_object("login_msg_label")
 		
+		self.lock_label=builder.get_object("lock_label")
 		self.lock_switch=builder.get_object("lock_switch")
+		self.lock_separator=builder.get_object("lock_separator")
+		self.help_label=builder.get_object("help_label")
 		
 				
 		self.login_button.grab_focus()
 		
 		self.connect_signals()
+		self.set_css_info()
 		self.main_window.show()
 		
 	#def start_gui
@@ -91,6 +96,23 @@ class LliurexCDLocker:
 		
 	#def connect_signals
 	
+	# CSS ###########################################################
+
+	def set_css_info(self):
+		
+		self.style_provider=Gtk.CssProvider()
+		f=Gio.File.new_for_path(CSS_FILE)
+		self.style_provider.load_from_file(f)
+		Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),self.style_provider,Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
+		self.main_window.set_name("WHITE-BACKGROUND")
+		self.user_entry.set_name("CUSTOM-ENTRY")
+		self.password_entry.set_name("CUSTOM-ENTRY")
+		self.server_ip_entry.set_name("CUSTOM-ENTRY")
+		self.lock_label.set_name("DEFAULT-LABEL")
+		self.lock_separator.set_name("SEPARATOR")
+		self.help_label.set_name("DEFAULT-LABEL-HELP")
+
+	#def set_css_info		
 	
 	# SIGNALS ########################################################
 	
