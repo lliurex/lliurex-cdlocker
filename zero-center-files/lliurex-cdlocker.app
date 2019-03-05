@@ -6,7 +6,7 @@ Comment=Configures clients CD trays lock state
 Comment[es]=Configura el estado de bloqueo de las bandejas de CD de los clientes
 Comment[qcv]=Configura el estado de bloqueo de las bandejas de CD de los clientes
 Icon=lliurex-cdlocker
-Groups=admins;adm;teachers
+Groups=admins;sudo;teachers
 Category=Configuration
 ScriptPath=lliurex-cdlocker.zmd
 
