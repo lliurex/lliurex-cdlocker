@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.16) bionic; urgency=medium
+
+  * Added sudo group in login function
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 14 May 2019 13:03:03 +0200
+
 lliurex-cdlocker (0.15) bionic; urgency=medium
 
   * Changed adm group by sudo 
