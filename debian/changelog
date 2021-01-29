@@ -1,0 +1,114 @@
+lliurex-cdlocker (0.20) bionic; urgency=medium
+
+  * Fixed po files
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 20 Oct 2020 10:38:27 +0200
+
+lliurex-cdlocker (0.19) bionic; urgency=medium
+
+  * Adding ca@valencia
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 26 Jul 2019 11:18:41 +0200
+
+lliurex-cdlocker (0.18) bionic; urgency=medium
+
+  * Fixed login window
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Jul 2019 12:24:40 +0200
+
+lliurex-cdlocker (0.17) bionic; urgency=medium
+
+  * Fixed valencian translations
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 17 Jun 2019 13:54:20 +0200
+
+lliurex-cdlocker (0.16) bionic; urgency=medium
+
+  * Added sudo group in login function
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 14 May 2019 13:03:03 +0200
+
+lliurex-cdlocker (0.15) bionic; urgency=medium
+
+  * Changed adm group by sudo 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 05 Mar 2019 17:46:59 +0100
+
+lliurex-cdlocker (0.14) bionic; urgency=medium
+
+  * Applied new style to the graphical interface
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 30 Nov 2018 13:49:16 +0100
+
+lliurex-cdlocker (0.13) bionic; urgency=medium
+
+  * Initial release for bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 24 Oct 2018 12:48:14 +0200
+
+lliurex-cdlocker (0.3) xenial; urgency=high
+
+  * Updating artwork
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Fri, 27 Jul 2018 14:25:45 +0200
+
+lliurex-cdlocker (0.2.8) xenial; urgency=medium
+
+  * Updated categorization in zero-center
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 30 Apr 2018 09:30:52 +0200
+
+lliurex-cdlocker (0.2.7) xenial; urgency=high
+
+  * Removing test account
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 11 Oct 2017 11:47:53 +0200
+
+lliurex-cdlocker (0.2.6) xenial; urgency=high
+
+  * Dummy upgrade
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 03 Oct 2017 13:04:21 +0200
+
+lliurex-cdlocker (0.2.5) xenial; urgency=high
+
+  * Fonts to path in svg file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 03 Oct 2017 12:32:26 +0200
+
+lliurex-cdlocker (0.2.4) xenial; urgency=high
+
+  * Added zero-center files
+  * Added desktop file
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Tue, 03 Oct 2017 11:47:55 +0200
+
+lliurex-cdlocker (0.2.3) xenial; urgency=high
+
+  * Fixing GUI rsrc paths
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 02 Oct 2017 17:33:08 +0200
+
+lliurex-cdlocker (0.2.2) xenial; urgency=high
+
+  * Removed old postinst call 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 02 Oct 2017 14:06:32 +0200
+
+lliurex-cdlocker (0.2.1) xenial; urgency=high
+
+  * Updated package relationships
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Mon, 02 Oct 2017 13:26:19 +0200
+
+lliurex-cdlocker (0.2) xenial; urgency=high
+
+  * This package distributes cdlocker GUI now
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 28 Sep 2017 09:19:15 +0200
+
+lliurex-cdlocker (0.1) xenial; urgency=medium
+
+  * Initial Release.
+
+ -- M.Angel Juan <m.angel.juan@gmail.com>  Thu, 27 Jul 2017 12:18:45 +0200
