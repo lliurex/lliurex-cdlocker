@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 13:23+0100\n"
+"POT-Creation-Date: 2021-01-29 11:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,41 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/LliurexCDLocker.py:144
-msgid "Validating user..."
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/LliurexCDLocker.py:178
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/LliurexCDLocker.py:194
-msgid "Invalid user"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:34
+#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/llxCDLocker.qml:75
 msgid "Lock clients CD trays"
 msgstr ""
 
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:87
+#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/llxCDLocker.qml:133
 msgid ""
 "Allows you to lock / unlock the CD / DVD drive tray of the clients connected "
-"to the server.This prevents the tray from being manipulated by the clients' users"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:138
-msgid "User"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:152
-msgid "Password"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:164
-msgid "Server IP    (Default value : server)"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:173
-msgid "Login"
-msgstr ""
-
-#: ../lliurex-cdlocker.install/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.ui:212
-msgid "Lliurex CDLocker"
+"to the server. This prevents the tray from being manipulated by the client's "
+"users"
 msgstr ""

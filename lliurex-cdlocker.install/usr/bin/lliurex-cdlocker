@@ -1,13 +1,24 @@
 #! /usr/bin/python3
+from PySide2.QtWidgets import QApplication
+from PySide2.QtQuick import QQuickView
+from PySide2.QtCore import QUrl, QObject, Slot
+import os
 import sys
-sys.path.append('/usr/share/lliurex-cdlocker/')
 
-import LliurexCDLocker
+class Tunnel(QObject):
 
-if __name__=="__main__":
-	
-	args={}
-	args["gui"]=True
-	args["server"]="server"
-	ls=LliurexCDLocker.LliurexCDLocker(args)
-	
+	@Slot(str)
+	def on_ticket(self, ticket):
+		
+		os.system("/usr/share/lliurex-cdlocker/lliurex-cdlocker-gui %s 2>/dev/null &"%ticket)
+		app.quit()
+
+app = QApplication([])
+tunnel = Tunnel()
+view = QQuickView()
+view.rootContext().setContextProperty("tunnel", tunnel)
+url = QUrl("/usr/share/lliurex-cdlocker/rsrc/login.qml")
+view.setSource(url)
+view.show()
+
+sys.exit(app.exec_())

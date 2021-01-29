@@ -1,71 +1,37 @@
-import xmlrpc.client
-import ssl
-import threading
+import n4d.client
 import time
+import sys
 
 
 class N4dManager:
-	
-	def __init__(self,server=None):
-		
-		self.debug=True
-		
-		self.client=None
-		self.user_validated=False
-		self.user_groups=[]
-		self.validation=None
-		self.status=False
-		
-		if server!=None:
-			self.set_server(server)
+
+	def __init__(self,ticket):
+
+		ticket=ticket[1]+' '+ticket[2]+' '+ticket[3]+' '+ticket[4]
+		self.set_server(ticket)
 		
 	#def init
-	
-	
-	def dprint(self,msg):
-		
-		if self.debug:
-			print(str(msg))
-			
-	#def dprint
-		
-	
-	def set_server(self,server):
-		
-		context=ssl._create_unverified_context()	
-		self.client=xmlrpc.client.ServerProxy("https://%s:9779"%server,allow_none=True,context=context)
-		
+
+	def set_server(self,ticket):
+
+		tk=n4d.client.Ticket(ticket)
+
+		self.n4dclient=n4d.client.Client(ticket=tk)
 	#def set_server
-	
-	
-	def validate_user(self,user,password):
-		
-		ret=self.client.validate_user(user,password)
-		self.user_validated,self.user_groups=ret
-			
-		
-		if self.user_validated:
-			self.validation=(user,password)
-			self.status=self.is_lock_enabled()
-		
-		return self.user_validated
-		
-	#def validate_user
-	
 	
 	def is_lock_enabled(self):
 		
-		return self.client.is_enabled(self.validation,"CDLockerManager")
+		return self.n4dclient.CDLockerManager.is_enabled()
 		
-	#def cron_enabled
-	
+	#def is_lock_enabled
 	
 	def set_lock_status(self,status):
 		
-		ret=self.client.set_lock_status(self.validation,"CDLockerManager",status)
-		print(ret)
+		self.n4dclient.CDLockerManager.set_lock_status(status)
 		
 	#def set_lock_status
+
+#class M4dManager
 	
 	
 	
