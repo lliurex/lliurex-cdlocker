@@ -8,7 +8,7 @@ Homepage: http://lliurex.net
 
 Package: lliurex-cdlocker
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, python3
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3, n4d-qt-agent, python3-n4d-client
 Description: CD locker GUI
  Locks drive tray for classroom computers. n4d-cdlocker-server needs to be 
  installed  on servers and n4d-cdlocker-client on clients.
