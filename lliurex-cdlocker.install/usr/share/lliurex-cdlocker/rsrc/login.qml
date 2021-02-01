@@ -1,4 +1,4 @@
- import QtQuick 2.6
+import QtQuick 2.6
 import Edupals.N4D.Agent 1.0 as N4DAgent
 
 
@@ -11,9 +11,9 @@ Rectangle {
     N4DAgent.Login
     {
         showAddress: true
-        address: "https://localhost:9779"
+        address: "https://server:9779"
         showCancel: false
-        inGroups:["sudo","admins"]
+        inGroups:["sudo","admins","teachers"]
         
         anchors.centerIn: parent
         
