@@ -1,3 +1,11 @@
+lliurex-cdlocker (0.30) focal; urgency=medium
+
+  * Migrated gui to Pyside2 with QML
+  * Integrated with new n4d login agent
+  * Initial release for focal
+
+ -- Juan Ramon Pelegrina <juapesaix@hotmail.com>  Mon, 01 Feb 2021 08:26:06 +0100
+
 lliurex-cdlocker (0.20) bionic; urgency=medium
 
   * Fixed po files
