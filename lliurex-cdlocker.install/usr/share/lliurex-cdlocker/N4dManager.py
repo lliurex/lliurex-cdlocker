@@ -5,9 +5,9 @@ import sys
 
 class N4dManager:
 
-	def __init__(self,ticket):
+	def __init__(self,ticket=None):
 
-		ticket=ticket[1]+' '+ticket[2]+' '+ticket[3]+' '+ticket[4]
+		ticket=ticket.replace('##U+0020##',' ')
 		self.set_server(ticket)
 		
 	#def init

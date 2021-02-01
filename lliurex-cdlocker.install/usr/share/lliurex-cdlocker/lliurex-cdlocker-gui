@@ -16,7 +16,7 @@ if __name__=="__main__":
 	app = QApplication()
 	engine = QQmlApplicationEngine()
 	context=engine.rootContext()
-	bridge=LliurexCDLocker.Bridge(sys.argv)
+	bridge=LliurexCDLocker.Bridge(sys.argv[1])
 	context.setContextProperty("con", bridge)
 
 	url = QUrl("/usr/share/lliurex-cdlocker/rsrc/llxCDLocker.qml")
