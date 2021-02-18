@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.30.1) focal; urgency=medium
+
+  * Improved code
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 18 Feb 2021 12:39:54 +0100
+
 lliurex-cdlocker (0.30) focal; urgency=medium
 
   * Migrated gui to Pyside2 with QML
