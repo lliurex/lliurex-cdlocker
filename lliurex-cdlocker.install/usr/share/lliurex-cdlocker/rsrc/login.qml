@@ -11,7 +11,7 @@ Rectangle {
     N4DAgent.Login
     {
         showAddress: true
-        address: "https://server:9779"
+        address: "server"
         showCancel: false
         inGroups:["sudo","admins","teachers"]
         
