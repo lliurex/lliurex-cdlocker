@@ -10,14 +10,13 @@ class Bridge(QObject):
 		QObject.__init__(self)
 
 		self.n4d_man=N4dManager.N4dManager(ticket)
-		self._loadState=False
 		self.getState()
 	
 	#def _init	
 
 	def getState(self):
 
-		self.loadState=self.n4d_man.is_lock_enabled()
+		self._loadState=self.n4d_man.is_lock_enabled()
 
 	#def getState
 
@@ -32,19 +31,7 @@ class Bridge(QObject):
 
 		return self._loadState
 
-	#def _getLoadState	
-
-
-	def _setLoadState(self,loadState):
-
-		self._loadState=loadState
-		self.on_loadState.emit()
-
-	#def _setLoadState
-		
-	on_loadState=Signal()
-	loadState=Property(bool,_getLoadState,_setLoadState, notify=on_loadState)
-
+	loadState=Property(bool,_getLoadState,constant=True)
 
 
 #class Bridge

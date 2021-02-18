@@ -11,7 +11,7 @@ class Tunnel(QObject):
 	def on_ticket(self, ticket):
 		
 		ticket=ticket.replace(' ','##U+0020##')
-		os.system("/usr/share/lliurex-cdlocker/lliurex-cdlocker-gui %s 2>/dev/null &"%ticket)
+		os.system("/usr/share/lliurex-cdlocker/lliurex-cdlocker-gui %s &"%ticket)
 		app.quit()
 
 app = QApplication([])
