@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.30.3) focal; urgency=medium
+
+  * Clean code
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 16 Jul 2021 12:21:47 +0200
+
 lliurex-cdlocker (0.30.2) focal; urgency=medium
 
   * Fixed depends
