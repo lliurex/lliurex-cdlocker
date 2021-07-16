@@ -1,6 +1,6 @@
-import QtQuick 2.5
-import QtQuick.Controls 2.5
-import QtQuick.Layouts 1.3
+import QtQuick 2.6
+import QtQuick.Controls 2.6
+import QtQuick.Layouts 1.15
 import QtQuick.Window 2.2
 
 ApplicationWindow {
@@ -19,8 +19,7 @@ ApplicationWindow {
     }
     onClosing: {
     	toggleswitch.checked=false,
-    	close.accepted=true,
-    	console.log("Cleanup done, can close!");
+    	close.accepted=true;
     }
 
    
