@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.30.5) focal; urgency=medium
+
+  * Added function to clear cache when app version change
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 10 Nov 2021 08:37:53 +0100
+
 lliurex-cdlocker (0.30.4) focal; urgency=medium
 
   * Fixed login panel
