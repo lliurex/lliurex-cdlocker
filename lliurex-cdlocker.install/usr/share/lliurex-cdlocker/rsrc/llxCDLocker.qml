@@ -14,69 +14,69 @@ ApplicationWindow {
 	maximumWidth: mainLayout.Layout.maximumWidth + 2 * margin
 	maximumHeight: mainLayout.Layout.maximumHeight + 2 * margin
 	Component.onCompleted: {
-        x = Screen.width / 2 - width / 2
-        y = Screen.height / 2 - height / 2
-    }
-    onClosing: {
-    	toggleswitch.checked=false,
-    	close.accepted=true;
-    }
+	    x = Screen.width / 2 - width / 2
+	    y = Screen.height / 2 - height / 2
+	}
+	onClosing: {
+		toggleswitch.checked=false,
+		close.accepted=true;
+	}
 
    
-    ColumnLayout {
-    	id: mainLayout
-        anchors.fill: parent
-        anchors.margins: margin
-       	Layout.minimumWidth:600	
-        Layout.maximumWidth:600
-        Layout.minimumHeight:350
-        Layout.maximumHeight:350
+	ColumnLayout {
+		id: mainLayout
+	    anchors.fill: parent
+	    anchors.margins: margin
+	   	Layout.minimumWidth:600	
+	    Layout.maximumWidth:600
+	    Layout.minimumHeight:350
+	    Layout.maximumHeight:350
 
-        RowLayout {
-        	id: bannerBox
-        	Layout.alignment:Qt.AlignTop
-        	Layout.minimumHeight:120
-        	Layout.maximumHeight:120
-        	Image{
-        		id:banner
-        		source: "/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.png"
-       		}
-       	}
-        
-        
-        GroupBox{
-        	id:gridBox
-        	Layout.fillWidth: true
-        	implicitWidth: 600
-            implicitHeight:200
-        	Layout.topMargin: 10
-        	Layout.bottomMargin: 10
-        	Layout.rightMargin:10
-        	Layout.leftMargin:10
-        	Layout.alignment:Qt.AlignTop
+	    RowLayout {
+	    	id: bannerBox
+	    	Layout.alignment:Qt.AlignTop
+	    	Layout.minimumHeight:120
+	    	Layout.maximumHeight:120
+	    	Image{
+	    		id:banner
+	    		source: "/usr/share/lliurex-cdlocker/rsrc/lliurex-cdlocker.png"
+	   		}
+	   	}
+	    
+	    
+	    GroupBox{
+	    	id:gridBox
+	    	Layout.fillWidth: true
+	    	implicitWidth: 600
+	        implicitHeight:200
+	    	Layout.topMargin: 10
+	    	Layout.bottomMargin: 10
+	    	Layout.rightMargin:10
+	    	Layout.leftMargin:10
+	    	Layout.alignment:Qt.AlignTop
 
-      		StackLayout {
-                id: stackLayout
-                currentIndex:0
-                implicitWidth: 600
-            	implicitHeight:200
+	  		StackLayout {
+	            id: stackLayout
+	            currentIndex:0
+	            implicitWidth: 600
+	        	implicitHeight:200
 				
-	         	GridLayout {
-	        		id: switchLayout
-	                rows: 3
-	                flow: GridLayout.TopToBottom
-	                Layout.topMargin: 30
-	                Layout.bottomMargin: 10
-	                RowLayout {
-	                	id: rowLayout
-	                	Layout.topMargin: 10
-	                	Layout.bottomMargin: 10
-	                	Layout.fillWidth: true
-	                	Layout.leftMargin:5
-	                	
-	                	Text {
-	                		id:textMessage
-	                		text: i18nd("lliurex-cdlocker","Lock clients CD trays")
+		     	GridLayout {
+		    		id: switchLayout
+		            rows: 3
+		            flow: GridLayout.TopToBottom
+		            Layout.topMargin: 30
+		            Layout.bottomMargin: 10
+		            RowLayout {
+		            	id: rowLayout
+		            	Layout.topMargin: 10
+		            	Layout.bottomMargin: 10
+		            	Layout.fillWidth: true
+		            	Layout.leftMargin:5
+		            	
+		            	Text {
+		            		id:textMessage
+		            		text: i18nd("lliurex-cdlocker","Lock clients CD trays")
 			    			font.family: "Quattrocento Sans Bold"
 			   				font.pointSize: 11
 			    			color: "black"
@@ -89,28 +89,28 @@ ApplicationWindow {
 		        			checked: con.loadState
 		        			Layout.alignment:Qt.AlignVCenter
 		        			Layout.fillWidth: true
-  			
+				
 		        			indicator: Rectangle {
-		        							implicitWidth: 40
-							            	implicitHeight: 10
-							            	x: toggleswitch.width - width - toggleswitch.rightPadding
-							            	y: parent.height/2 - height/2 
-							            	radius: 7
-							            	color: toggleswitch.checked ? "deepskyBlue" : "lightGray"
+								implicitWidth: 40
+				            	implicitHeight: 10
+				            	x: toggleswitch.width - width - toggleswitch.rightPadding
+				            	y: parent.height/2 - height/2 
+				            	radius: 7
+				            	color: toggleswitch.checked ? "deepskyBlue" : "lightGray"
 
-							             	Rectangle {
-						                		x: toggleswitch.checked ? parent.width - width : 0
-						                   		width: 20
-						                		height: 20
-						                		y:parent.height/2-height/2
-						                		radius: 10
-						                		border.color: "grey"
-						            		}
+				             	Rectangle {
+			                		x: toggleswitch.checked ? parent.width - width : 0
+			                   		width: 20
+			                		height: 20
+			                		y:parent.height/2-height/2
+			                		radius: 10
+			                		border.color: "grey"
+			            		}
 					        }
 					      
 		        			onToggled: {
 		        				con.setState(toggleswitch.checked)
-	    					}
+							}
 							
 						}
 					}
@@ -118,19 +118,18 @@ ApplicationWindow {
 					Rectangle {
 						Layout.fillWidth: true
 			    		Layout.preferredWidth: 85
-        				Layout.leftMargin:5
+						Layout.leftMargin:5
 			    		Layout.bottomMargin: 5
 					    height: 1
 					    border.color: "black"
 					    border.width: 5
 					    radius: 10
 					}	
-					
+				
 					RowLayout {
-	                	id: rowHelp
-	                	Layout.bottomMargin: 5
-	                	Layout.leftMargin:5
-
+		            	id: rowHelp
+		            	Layout.bottomMargin: 5
+		            	Layout.leftMargin:5
 
 						Text {
 							id:helpText
@@ -141,13 +140,11 @@ ApplicationWindow {
 				    		Layout.preferredWidth: 555
 		     	    		wrapMode: Text.WordWrap
 		     	    		horizontalAlignment: Text.AlignJustify
-
 						}   
 					}
 				}
 			}
-       			
 		}	
-    }    
+	}    
     
 }
