@@ -1,3 +1,9 @@
+lliurex-cdlocker (0.30.6.23) jammy; urgency=medium
+
+  * First jammy release 
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 24 Jan 2024 10:52:18 +0100
+
 lliurex-cdlocker (0.30.6) focal; urgency=medium
 
   * Added import to show text with i18nd
